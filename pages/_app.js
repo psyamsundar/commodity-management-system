@@ -3,7 +3,6 @@ import { ThemeProvider } from 'next-themes';
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
 
-// UserContext to share logged-in user info across app
 export const UserContext = createContext(null);
 
 function MyApp({ Component, pageProps }) {

@@ -1,4 +1,3 @@
-// components/ProductTable.js
 export default function ProductTable({ products, onEdit, onDelete }) {
   return (
     <div className="flex-1 bg-white dark:bg-gray-800 p-4 rounded shadow overflow-x-auto">

@@ -1,4 +1,3 @@
-// components/ProductActionHistory.js
 export default function ProductActionHistory({ logs }) {
   return (
     <div className="mt-10 bg-white dark:bg-gray-800 p-4 rounded shadow overflow-x-auto">

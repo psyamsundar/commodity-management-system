@@ -20,19 +20,17 @@ export default async function handler(req, res) {
     return res.status(401).json({ message: 'Invalid credentials' });
   }
 
-  // Set the user cookie (URL-encoded JSON)
   res.setHeader('Set-Cookie', serialize('user', encodeURIComponent(JSON.stringify({
     id: user.id,
     email: user.email,
     role: user.role,
   })), {
-    path: '/', // send cookie on all routes
-    httpOnly: false, // if you want to read cookie in client JS, false; if only server, true
-    maxAge: 60 * 60 * 24 * 7, // 7 days
+    path: '/', 
+    httpOnly: false, 
+    maxAge: 60 * 60 * 24 * 7,
     sameSite: 'lax', 
     secure: process.env.NODE_ENV === 'production',
   }));
 
-  // Return user info as JSON
   res.status(200).json({ id: user.id, email: user.email, role: user.role });
 }

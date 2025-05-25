@@ -1,4 +1,3 @@
-// pages/dashboard.js
 import { useEffect, useState, useContext } from 'react';
 import { useRouter } from 'next/router';
 import { UserContext } from './_app';
@@ -35,7 +34,6 @@ export default function Dashboard() {
     return <p className="p-4">Access denied</p>;
   }
 
-  // Summary calculations
   const totalProducts = products.length;
   const totalQuantity = products.reduce((sum, p) => sum + p.quantity, 0);
   const totalValue = products.reduce((sum, p) => sum + (p.quantity * p.price), 0);
@@ -46,7 +44,6 @@ export default function Dashboard() {
     <div className="p-6 space-y-8">
       <h1 className="text-3xl font-bold mb-4">Admin Dashboard</h1>
 
-      {/* Section 1: Summary Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
           <h2 className="text-xl font-semibold">Total Products</h2>
@@ -62,7 +59,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Section 2: Recent Activity */}
       <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">Recent Activity</h2>
         <ul className="space-y-2">
@@ -74,7 +70,6 @@ export default function Dashboard() {
         </ul>
       </div>
 
-      {/* Section 3: Low Stock Alerts */}
       <div className="bg-white dark:bg-gray-800 p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">Low Stock Alerts</h2>
         {lowStock.length === 0 ? (

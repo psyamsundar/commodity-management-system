@@ -146,9 +146,7 @@ export default function Products() {
     <div className="p-4">
       <h1 className="text-3xl mb-6">Products</h1>
 
-      {/* Top Section: Form + Product Table side by side */}
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Add/Edit Form */}
         <form
           onSubmit={onSubmit}
           className="flex-1 space-y-2 bg-white dark:bg-gray-800 p-4 rounded shadow"
@@ -203,7 +201,6 @@ export default function Products() {
           </div>
         </form>
 
-        {/* Use ProductTable component */}
         <ProductTable
           products={products}
           onEdit={onEdit}
@@ -211,7 +208,6 @@ export default function Products() {
         />
       </div>
 
-      {/* Use ProductActionHistory component */}
       <ProductActionHistory logs={logs} />
     </div>
   );

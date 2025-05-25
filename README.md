@@ -1,45 +1,75 @@
+# Commodity Management System
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+A basic commodity management system developed as a part of the **Slooze Take Home Challenge** for the Frontend Role.
 
-## Getting Started
+## 🔧 Features
 
-First, run the development server:
+- ✅ Role-based access: **Manager** and **Storekeeper**
+- 🌗 Light/Dark Mode Toggle
+- 🛒 Add, Edit, and Delete Products
+- 📊 Admin Dashboard
+- 🔐 Secure Login System
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Setup Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/commodity-management-system.git
+   cd commodity-management-system
+   ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. **Seed the database with default users**:
+   ```bash
+   node seed.js
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Learn More
+## 🔑 Login Details
 
-To learn more about Next.js, take a look at the following resources:
+### Manager
+- **Email:** manager@site.com
+- **Password:** password
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Storekeeper
+- **Email:** storekeeper@store.com
+- **Password:** password
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Screenshots
 
-## Deploy on Vercel
+### Login Page (Light vs Dark)
+![Login Light](screenshots/login-light.jpg)
+![Login Dark](screenshots/login-dark.jpg)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Product Page (Light vs Dark)
+![Products Light](screenshots/products-light.jpg)
+![Products Dark](screenshots/products-dark.jpg)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-=======
-# commodity-management-system
-A basic commodity management system, created as a part of Slooze take home challenge-front-end
+### Dashboard (Light vs Dark)
+![Dashboard Light](screenshots/dashboard-light.jpg)
+![Dashboard Dark](screenshots/dashboard-dark.jpg)
 
+## 📁 Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [SQLite](https://www.sqlite.org/index.html)
+- [Node.js](https://nodejs.org/)
+
+## 👤 Author
+
+Created by **[@psyamsundar](https://github.com/psyamsundar)**
+
+---
+
+Feel free to fork, contribute, or suggest improvements!

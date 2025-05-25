@@ -72,4 +72,4 @@ Created by **[@psyamsundar](https://github.com/psyamsundar)**
 
 ---
 
-Feel free to fork, contribute, or suggest improvements!
+Feel free to suggest improvements!
